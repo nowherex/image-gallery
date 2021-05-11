@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Galleria de Imagens</title>
+</head>
+
+<body>
+    <div id="modal-container" class="modal">
+        <div class="modal-content">
+            <img id="modal-content-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6d/24-72mm_zoom_demo_horizontal.jpg" alt="Nature">
+        </div>
+        <span id="btn-close" class="btn-close">&times;</span>
+    </div>
+    <!-- MAIN (Center website) -->
+    <div class="main">
+        <div class="topo">
+            <h1>Galleria de Imagens</h1>
+            <hr>
+
+            <h2>Filtrar:</h2>
+
+            <div id="my-btn-container">
+                <button class="btn active" onclick="filterSelection('showAll', this)"> Show All</button>
+                <button class="btn" onclick="filterSelection('car', this)"> Nature</button>
+                <button class="btn" onclick="filterSelection('outra', this)"> Cars</button>
+                <button class="btn" onclick="filterSelection('isso', this)"> People</button>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="content car" id="01">
+                <div class="content-header">
+                    <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Mountains">
+                </div>
+                <div class="content-body">
+                    <h4>Mountains</h4>
+                    <p>Lorem ipsum dolor..Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</p>
+                </div>
+            </div>
+
+
+            <div class="content car">
+                <div class="content-header">
+                    <img src="https://images.all-free-download.com/images/graphiclarge/beach_cloud_dawn_horizon_horizontal_landscape_ocean_601821.jpg" alt="Lights">
+                </div>
+                <div class="content-body">
+                    <h4>LighMountains</h4>
+                    <p>Lorem ipsum dolor..Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</p>
+                </div>
+            </div>
+
+
+            <div class="content car">
+                <div class="content-header">
+                    <img src="https://i.pinimg.com/originals/0b/ac/f6/0bacf62a4bd456d02d02c6b8a5c98f67.jpg" alt="Nature">
+                </div>
+                <div class="content-body">
+                    <h4>Forest</h4>
+                    <p>Lorem ipsum dolor..Lorem ipsum dolor..Lorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolorLorem ipsum dolor</p>
+                </div>
+            </div>
+
+
+
+            <div class="content outra" id="02">
+                <div class="content-header">
+                    <img src="https://www.w3schools.com/w3images/cars1.jpg" alt="Car">
+                </div>
+                <div class="content-body">
+                    <h4>Retro</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+
+
+            <div class="content outra">
+                <div class="content-header">
+                    <img src="https://www.w3schools.com/w3images/cars2.jpg" alt="Car">
+                </div>
+                <div class="content-body">
+                    <h4>Fast</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+
+
+            <div class="content outra" id="03">
+                <div class="content-header">
+                    <img src="https://www.w3schools.com/w3images/cars3.jpg" alt="Car">
+                </div>
+                <div class="content-body">
+                    <h4>Classic</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+
+
+
+            <div class="content isso">
+                <div class="content-header">
+                    <img src="https://www.w3schools.com/w3images/people1.jpg" alt="Car">
+                </div>
+                <div class="content-body">
+                    <h4>Girl</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+
+
+            <div class="content isso" id="04">
+                <div class="content-header">
+                    <img src="https://www.w3schools.com/w3images/people2.jpg" alt="Car">
+                </div>
+                <div class="content-body">
+                    <h4>Man</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+
+
+            <div class="content isso">
+                <div class="content-header">
+                    <img src="https://www.w3schools.com/w3images/people3.jpg" alt="Car">
+                </div>
+                <div class="content-body">
+                    <h4>Woman</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </div>
+            </div>
+
+            <!-- END GRID -->
+        </div>
+
+        <!-- END MAIN -->
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

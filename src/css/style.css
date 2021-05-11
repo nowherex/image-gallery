@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #d8d8d8;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif, Geneva, Verdana, sans-serif;
+}
+
+
+/* Center website */
+
+.main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.topo {
+    margin: 15px;
+}
+
+.topo h1,
+.topo h2 {
+    margin: 15px 0;
+}
+
+.row {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Content */
+
+.content {
+    width: 250px;
+    border: 3px solid #ffff;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    flex-wrap: wrap;
+    align-content: flex-start
+}
+
+.content:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 1em rgb(107, 107, 107);
+    transition: 200ms;
+    transition-property: initial;
+    cursor: pointer;
+}
+
+.content-header {
+    height: 150px;
+    flex: 1 1 220px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-header img {
+    max-height: 150px;
+    max-width: 220px;
+    align-self: center;
+}
+
+.content-body {
+    margin-top: 15px;
+    justify-content: center;
+    max-height: 100%;
+}
+
+.content h4 {
+    font-size: 1.15rem;
+    margin-bottom: 4px;
+}
+
+.content p {
+    font-size: 1em;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(160, 160, 160);
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.modal-content img {
+    max-height: 800px;
+    max-width: 1000px;
+}
+
+.modal {
+    width: 99vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    visibility: hidden;
+}
+
+.btn-close {
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+.modal_active {
+    visibility: visible;
+}
+
+.noHover {
+    pointer-events: none;
+}

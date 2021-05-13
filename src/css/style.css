@@ -18,15 +18,15 @@ body {
 }
 
 .topo {
-    margin: 15px;
+    padding-top: 20px;
 }
 
 .topo h1,
 .topo h2 {
-    margin: 15px 0;
+    padding: 15px 0;
 }
 
-.row {
+.flexcontainer {
     margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -79,6 +79,10 @@ body {
 
 .content p {
     font-size: 1em;
+}
+
+#btn-container {
+    margin: 20px 10px;
 }
 
 .btn {

@@ -1,7 +1,7 @@
 let buttonsFilter = [...document.getElementById('btn-container').children];
 let allCards = [...document.getElementsByClassName('flexcontainer').item(0).children]
 let modal = document.getElementById('modal-container')
-let modalCotentImg = document.getElementById('modal-content-img')
+let modalContentImg = document.getElementById('modal-content-img')
 let ButtonCloseModal = document.getElementById('btn-close')
 let divCardCurrentOpened = null
 
@@ -9,7 +9,7 @@ async function filterSelection(type, btn) {
     let showAllCards = allCards.forEach(card => card.style.display = "block")
     let isBtnFilterActive = btn.className.includes('active')
     let btnRemoveClassActive = btn => btn.className = 'btn'
-    let allDivsWithoutType = card => !card.className.includes(type)
+    let cardWithoutTypeSelected = card => !card.className.includes(type)
 
     if (isBtnFilterActive) {
         showAllCards
@@ -19,7 +19,7 @@ async function filterSelection(type, btn) {
             showAllCards
         } else {
             allCards.filter(card => {
-                if (allDivsWithoutType(card)) {
+                if (cardWithoutTypeSelected(card)) {
                     return card.style.display = "none"
                 }
 
@@ -38,18 +38,18 @@ const addEventCLickToAllCards = card => {
     card.addEventListener('click', () => {
         divCardCurrentOpened = card; // save current card opened for restore hover after.
         toggleHoverCard()
-        modalCotentImg.setAttribute('src', getSrcCard(card))
+        modalContentImg.setAttribute('src', getSrcCard(card))
         toggleModalClassActive()
 
 
     })
 }
 
-const eventCloseAndRestoreModal = () => {
-    modalCotentImg.removeAttribute('src')
+const addEventCloseAndRestoreModal = () => {
+    modalContentImg.removeAttribute('src')
     toggleHoverCard() // restore effect hover to card
     toggleModalClassActive()
 }
 
 allCards.forEach(addEventCLickToAllCards)
-ButtonCloseModal.addEventListener('click', eventCloseAndRestoreModal)
+ButtonCloseModal.addEventListener('click', addEventCloseAndRestoreModal)

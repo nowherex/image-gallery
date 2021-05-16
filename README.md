@@ -5,7 +5,7 @@ Responsive page with flexbox, and responsive images (horizontal and vertical ima
 
 
 ## images - index:
-![Code Coverage](images/01.JPG)
+![Code Coverage](images/01.jpg)
 
 ## image - Open image mode:
 ![Code Coverage](images/02.JPG)
